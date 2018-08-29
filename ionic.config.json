@@ -1,0 +1,8 @@
+{
+  "name": "AER_Congres",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular",
+  "pro_id": "d4585a48"
+}
