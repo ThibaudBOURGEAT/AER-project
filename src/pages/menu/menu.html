@@ -1,38 +1,40 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>menu</ion-title>
+    <ion-title style="text-align: center">Menu</ion-title>
   </ion-navbar>
 
 </ion-header>
 
-
-<ion-content padding>
-  <ion-row>
-    <ion-col col-4 (click)="pushPage(homePage)">
-      Accueil
-    </ion-col>
-    <ion-col col-4 (click)="pushPage(whoAreWePage)">
-      Qui sommes nous ?
-    </ion-col>
-    <ion-col col-4 (click)="pushPage(eventsPage)">
-      Congrès 2018
-    </ion-col>
-  </ion-row>
-  <ion-row>
-    <ion-col col-4 (click)="pushPage(homePage)">
-      Inforamations
-    </ion-col>
-    <ion-col col-4 (click)="pushPage(friendsPage)">
-      Inscription
-    </ion-col>
-    <ion-col col-4 (click)="pushPage(eventsPage)">
-      Actualités
-    </ion-col>
-  </ion-row>
-  <ion-row>
-    <ion-col col-4 (click)="pushPage(ContactPage)">
-      Contact
-    </ion-col>
-  </ion-row>
-</ion-content>
+  <ion-content padding>
+    <ion-row>
+      <ion-icon class="AER">
+        <img src="../../assets/imgs/AER_LOGOTYPE_CMJN_HORIZONTAL.png"/>
+      </ion-icon>
+      <ion-col col-4 (click)="pushPage(Pages[0])">
+        Accueil
+      </ion-col>
+      <ion-col col-4 (click)="pushPage(Pages[1])">
+        Qui sommes nous ?
+      </ion-col>
+      <ion-col col-4 (click)="pushPage(eventsPage)">
+        Congrès 2018
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-4 (click)="pushPage(homePage)">
+        Inforamations
+      </ion-col>
+      <ion-col col-4 (click)="pushPage(friendsPage)">
+        Inscription
+      </ion-col>
+      <ion-col col-4 (click)="pushPage(eventsPage)">
+        Actualités
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-4 (click)="pushPage(ContactPage)">
+        Contact
+      </ion-col>
+    </ion-row>
+  </ion-content>

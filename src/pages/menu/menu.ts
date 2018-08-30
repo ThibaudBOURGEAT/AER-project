@@ -1,16 +1,13 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-
-import { HomePage } from '../../pages/home/home';
-import { WhoAreWePage } from '../../pages/who-are-we/who-are-we';
+import { PAGES } from './listMenu';
 
 @Component({
   selector: 'page-menu',
   templateUrl: 'menu.html',
 })
 export class MenuPage {
-  homePage:any = HomePage;
-  whoAreWePage:any = WhoAreWePage;
+  Pages:any = PAGES;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
