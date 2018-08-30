@@ -19,7 +19,7 @@ export class WhoAreWePage {
   }
 
   popView(){
-     this.NavController.pop();
+     this.navCtrl.pop();
    }
 
   ionViewDidLoad() {

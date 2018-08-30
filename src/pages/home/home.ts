@@ -12,6 +12,6 @@ export class HomePage {
   }
 
   popView(){
-     this.NavController.pop();
+     this.navCtrl.pop();
    }
 }
