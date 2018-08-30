@@ -18,6 +18,10 @@ export class WhoAreWePage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
+  popView(){
+     this.NavController.pop();
+   }
+
   ionViewDidLoad() {
     console.log('ionViewDidLoad WhoAreWePage');
   }
