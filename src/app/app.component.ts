@@ -6,12 +6,13 @@ import { NavController } from 'ionic-angular';
 
 import { HomePage } from '../pages/home/home';
 import { WhoAreWePage } from '../pages/who-are-we/who-are-we';
+import { MenuPage } from '../pages/menu/menu';
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
   @ViewChild('myNav') nav: NavController
-  rootPage:any = WhoAreWePage;
+  rootPage:any = MenuPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
