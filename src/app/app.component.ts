@@ -12,7 +12,7 @@ import { MenuPage } from '../pages/menu/menu';
 })
 export class MyApp {
   @ViewChild('myNav') nav: NavController
-  rootPage:any = MenuPage;
+  rootPage:any = HomePage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {

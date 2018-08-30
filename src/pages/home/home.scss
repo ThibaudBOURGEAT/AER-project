@@ -1,3 +1,52 @@
 page-home {
 
 }
+h5, h6{
+  font-weight: normal;
+}
+.banner{
+  width: 100%;
+  margin-top:-4px;
+}
+#contentBanner{
+  color:white;
+  text-align: center;
+  position: absolute;
+  margin-top: -250px;
+}
+#contentBanner div{
+  border-top: 3px solid #f39200;
+  padding: 10px 0px;
+}
+#contentBanner button{
+  font-size: 11px;
+  color:white;
+  background: #f39200;
+  padding: 5px 10px;
+  line-height: 1.2;
+  margin-top: 15px;
+}
+.content{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+.content p{
+  color:gray;
+}
+
+#contentComite{
+  color:white;
+  text-align: center;
+  position: absolute;
+  margin-top: -200px;
+}
+
+
+ion-scroll[scrollX] {
+  width: 100%;
+  height: 160px;
+  white-space: nowrap;
+  .scroll-item {
+    display: inline-block;
+  }}
