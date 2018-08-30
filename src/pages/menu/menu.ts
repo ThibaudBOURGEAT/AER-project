@@ -1,21 +1,22 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 
-/**
- * Generated class for the MenuPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { HomePage } from '../../pages/home/home';
+import { WhoAreWePage } from '../../pages/who-are-we/who-are-we';
 
-@IonicPage()
 @Component({
   selector: 'page-menu',
   templateUrl: 'menu.html',
 })
 export class MenuPage {
+  homePage:any = HomePage;
+  whoAreWePage:any = WhoAreWePage;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+  }
+
+  pushPage(Page){
+    this.navCtrl.push(Page);
   }
 
   popView(){
