@@ -5,6 +5,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { MenuPage } from '../pages/menu/menu';
 import { HomePage } from '../pages/home/home';
+import { WhoAreWePage } from '../pages/who-are-we/who-are-we';
 import { InformationsPage } from '../pages/informations/informations';
 
 @Component({
@@ -12,7 +13,7 @@ import { InformationsPage } from '../pages/informations/informations';
 })
 export class MyApp {
   @ViewChild('myNav') nav: NavController
-  rootPage:any = HomePage;
+  rootPage:any = WhoAreWePage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
