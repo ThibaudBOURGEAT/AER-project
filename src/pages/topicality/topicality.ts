@@ -12,8 +12,8 @@ export class TopicalityPage {
   imgs: any[];
 
   constructor(public navCtrl: NavController, public api: TopicalityProvider) {
-    this.getNews()
-    .then(this.getPictures);
+    //this.getNews()
+    //.then(this.getPictures);
   }
 
   popView(){
