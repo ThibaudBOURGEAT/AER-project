@@ -1,0 +1,45 @@
+page-informations {
+
+}
+.contentBanner{
+  margin-top: 0px;
+  background: url("../../assets/imgs/banniere-1-1024x260.jpg") center no-repeat;
+  height:150px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+.info{
+  margin-top: 0px;
+  padding-top: 60px;
+}
+
+.infoPrat{
+  padding: 5%;
+  background:rgb(238, 238, 238);
+}
+.infoPrat h2,  .hebergement h2, .access h2{
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.hebergement a{
+  text-decoration: none;
+  color:black;
+  font-weight: bold;
+}
+.access{
+  background: url("../../assets/imgs/fondlion-accueil-1024x575.jpg") no-repeat center fixed;
+  -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+  background-size: cover;
+  color:white;
+  margin-top: -5px;
+}
+.access p {
+  color:white;
+}
+.access a{
+  color: red;
+  text-decoration: none;
+}

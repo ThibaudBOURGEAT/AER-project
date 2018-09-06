@@ -8,13 +8,15 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { WhoAreWePage } from '../pages/who-are-we/who-are-we';
 import { MenuPage } from '../pages/menu/menu';
+import { InformationsPage } from '../pages/informations/informations';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     WhoAreWePage,
-    MenuPage
+    MenuPage,
+    InformationsPage
   ],
   imports: [
     BrowserModule,
@@ -25,7 +27,8 @@ import { MenuPage } from '../pages/menu/menu';
     MyApp,
     HomePage,
     WhoAreWePage,
-    MenuPage
+    MenuPage,
+    InformationsPage
   ],
   providers: [
     StatusBar,
