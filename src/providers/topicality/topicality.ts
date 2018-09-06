@@ -20,4 +20,14 @@ export class TopicalityProvider {
     });
   }
 
+  getPicture(id){
+    return new Promise(resolve => {
+      this.http.get('https://aer-congres.com/wp-json/wp/v2/media/' + id).subscribe(data => {
+        resolve(data);
+      }, err => {
+        console.log(err);
+      });
+    });
+  }
+
 }

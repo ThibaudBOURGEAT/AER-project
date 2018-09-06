@@ -9,9 +9,11 @@ import { TopicalityProvider } from '../../providers/topicality/topicality';
 export class TopicalityPage {
 
   news: any;
+  imgs: any[];
 
   constructor(public navCtrl: NavController, public api: TopicalityProvider) {
-    this.getNews();
+    this.getNews()
+    .then(this.getPictures);
   }
 
   popView(){
@@ -24,5 +26,9 @@ export class TopicalityPage {
           this.news = data;
           console.log(this.news);
         });
+    }
+
+    getPictures(){
+
     }
 }
