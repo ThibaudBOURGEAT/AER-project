@@ -1,0 +1,21 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Actualités</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+  <ion-list inset>
+    <ion-item *ngFor="let new of news">
+      <ion-card>
+        <h2>{{new.title.rendered}}</h2>
+      </ion-card>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+<ion-content padding>
+
+</ion-content>
