@@ -12,8 +12,8 @@ export class TopicalityPage {
   imgs: any[];
 
   constructor(public navCtrl: NavController, public api: TopicalityProvider) {
-    this.getNews()
-    .then(this.getPictures);
+    this.getPictures();
+    this.getNews();
   }
 
   popView(){
@@ -24,11 +24,19 @@ export class TopicalityPage {
         this.api.getNews()
         .then(data => {
           this.news = data;
-          console.log(this.news);
         });
     }
 
-    getPictures(){
-
-    }
+  /*  getPictures(){
+      this.api.getNews()
+      .then(data => {
+        for(let i in data){
+          this.api.getPicture(data[i].featured_media)
+          .then(data => {
+            this.imgs.push(data.guid.rendered);
+            console.log(this.imgs);
+          });
+        }
+      });
+    }*/
 }
