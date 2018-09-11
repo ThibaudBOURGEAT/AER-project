@@ -1,0 +1,74 @@
+comite {
+  #contentComite{
+    background: url("../../assets/imgs/fondlion-accueil-1024x575.jpg") no-repeat center fixed;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+    background-size: cover;
+    color:white;
+    width:100%;
+    height: 350px;
+    text-align: center;
+    margin-top: -5px;
+    padding: 30px;
+  }
+
+  //ion-scroll[scrollX] {
+  //  width: 100%;
+  //  height: 160px;
+  //  white-space: nowrap;
+  //  .scroll-item {
+  //    display: inline-block;
+  //  }}
+
+  ion-scroll[scrollX] {
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+  }
+  .contentProgramme ion-card-content{
+    background: #f7f7f7;
+    text-align: left;
+    padding-top: 15px !important;
+  }
+  .scroll-item {
+    display: inline-block;
+  }
+  .containerProfil{
+    width: 223px;
+    display: block;
+    word-wrap: break-word;
+  }
+  .profil{
+    height: 120px;
+    width: auto;
+    border-radius: 5px;
+    margin-left: calc(50% - 90px);
+  }
+
+  .profilLogo{
+    margin-left: calc(50% - 30px);
+    position:relative;
+    margin-top:-35px;
+    height: 60px;
+    width:60px;
+    border-radius: 100%;
+    border: 4px solid #f39200;
+  }
+  .nameTitle{
+    font-weight: bold;
+    padding: 5px;
+  }
+
+  .card, .card-md{
+    background: none ;
+    padding: 0px;
+    border:0px;
+    -webkit-box-shadow:none;
+    box-shadow:none;
+  }
+
+  .descriptionName{
+    width: 100%;
+    white-space: normal;
+  }
+
+}

@@ -1,3 +1,34 @@
 page-congress {
 
+  .titleMedical {
+    letter-spacing: 2px;
+    text-align: left;
+  }
+
+    ion-card-content{
+
+      background: #f7f7f7;
+      text-align: left;
+      padding-top: 20px !important;
+      color: gray;
+
+      ion-icon{
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      h2{
+        font-weight: bold;
+        letter-spacing: 2px;
+        margin-top: 20px !important;
+        margin-bottom: 30px !important;
+        text-align: justify;
+      }
+      h3{
+        color: #f39200 !important;
+        text-align: center;
+      }
+      hr{
+        margin-bottom: 15px;
+      }
+    }
 }
