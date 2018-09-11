@@ -8,12 +8,16 @@
 
 <ion-content>
   <ion-list inset>
-    <ion-item *ngFor="let new of news, let i = index">
-      <ion-card>
-      
-        <h2>{{new.title.rendered}}</h2>
+
+      <ion-card *ngFor="let new of news, let i = index">
+        <img src="{{imgs[i]}}">
+        <ion-card-content>
+          <ion-card-title>
+            {{new.title.rendered}}
+          </ion-card-title>
+        </ion-card-content>
       </ion-card>
-    </ion-item>
+
   </ion-list>
 </ion-content>
 

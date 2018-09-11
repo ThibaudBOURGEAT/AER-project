@@ -27,16 +27,17 @@ export class TopicalityPage {
         });
     }
 
-  /*  getPictures(){
+   getPictures(){
       this.api.getNews()
       .then(data => {
+        var pictures = new Array(data['length']);
         for(let i in data){
           this.api.getPicture(data[i].featured_media)
           .then(data => {
-            this.imgs.push(data.guid.rendered);
-            console.log(this.imgs);
+            pictures[i] = data['guid'].rendered;
           });
         }
+        this.imgs = pictures;
       });
-    }*/
+    }
 }
