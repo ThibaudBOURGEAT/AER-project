@@ -6,6 +6,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { HttpClientModule } from '@angular/common/http';
 
 import { TopicalityProvider } from '../providers/topicality/topicality';
+import { DatePipe } from '@angular/common';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -14,6 +15,7 @@ import { MenuPage } from '../pages/menu/menu';
 import { InformationsPage } from '../pages/informations/informations';
 import { TopicalityPage } from '../pages/topicality/topicality';
 import { CongressPage } from '../pages/congress/congress';
+import { NewPage } from '../pages/new/new';
 import { ComiteComponent } from '../components/comite/comite';
 
 @NgModule({
@@ -25,7 +27,8 @@ import { ComiteComponent } from '../components/comite/comite';
     InformationsPage,
     TopicalityPage,
     CongressPage,
-    ComiteComponent
+    ComiteComponent,
+    NewPage
   ],
   imports: [
     BrowserModule,
@@ -41,12 +44,14 @@ import { ComiteComponent } from '../components/comite/comite';
     InformationsPage,
     TopicalityPage,
     CongressPage,
-    ComiteComponent
+    ComiteComponent,
+    NewPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     TopicalityProvider,
+    DatePipe,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

@@ -7,11 +7,11 @@
 </ion-header>
 
 <ion-content>
-  <ion-list inset>
+  <ion-list inset *ngIf="news != null">
       <ion-card *ngFor="let new of news, let i = index">
         <img src="{{imgs[i]}}">
         <ion-card-content>
-          <ion-card-title>
+          <ion-card-title (click)="pushPage(new.id)">
             {{new.title.rendered}}
           </ion-card-title>
         </ion-card-content>

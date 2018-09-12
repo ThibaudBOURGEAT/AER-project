@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { TopicalityProvider } from '../../providers/topicality/topicality';
+import { NewPage } from '../../pages/new/new';
 
 @Component({
   selector: 'page-topicality',
@@ -39,5 +40,9 @@ export class TopicalityPage {
         }
         this.imgs = pictures;
       });
+    }
+
+    pushPage(idNew){
+      this.navCtrl.push(NewPage, {id: idNew});
     }
 }
