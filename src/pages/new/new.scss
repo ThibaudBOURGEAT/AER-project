@@ -1,3 +1,33 @@
 page-new {
+  .contentBanner{
+    img{
+      display: block;
+    }
+    .title{
+      padding-top: 20px;
+      color: black;
+      display: block;
+      font-weight: bold;
+    }
+    margin-top: 0px;
+    background: #003590;
+    background: center no-repeat;
+    height:150px;
+    color: white;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  .infoPratNew{
+      text-align: justify;
+      color:gray;
+      display: block;
+  }
+
+  .date{
+    color: red;
+    text-align: right;
+    padding-bottom: 25px;
+  }
 
 }

@@ -1,12 +1,19 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>new</ion-title>
+    <ion-title>Article</ion-title>
   </ion-navbar>
 
 </ion-header>
 
-
 <ion-content padding>
-  {{params}}
+  <div class="contentBanner" *ngIf="content != null">
+    <img src="{{img}}">
+    <h1 class="info title">{{content['title'].rendered}}</h1>
+    <br>
+    <div class="infoPratNew" [innerHTML]="content['content'].rendered">
+    </div>
+    <br>
+    <div class="date">{{content['date'] | date:'d/MM/y'}}</div>
+  </div>
 </ion-content>
