@@ -14,21 +14,55 @@
 
 
 <ion-content>
-  <ion-slides pager>
-    <ion-slide>
-      <ion-row>
-        <ion-col>MEDICAL</ion-col>
-        <ion-col>PARAMEDICAL</ion-col>
-      </ion-row>
 
-      <ion-card>
+  <div class="contentBanner">
+    <h1 class="info">CONGRÈS 2018</h1>
+  </div>
+  <button>VOIR LE PROGRAMME COMPLET (PDF)</button>
+  <ion-grid>
+      <ion-row>
+       <ion-col class="blueCase" id="1" (click)="display('n1')" style="background: #4572be;">
+         SESSIONS MÉDICALES
+         <br>
+         <span class="dateCongres">
+           Jeudi 22 Novembre 2018
+         </span>
+       </ion-col>
+       <ion-col class="blueCase" id="2" (click)="display('n2')">
+         SESSIONS MÉDICALES
+         <br>
+         <span class="dateCongres">
+          Vendredi 23 Novembre 2018
+         </span>
+       </ion-col>
+      </ion-row>
+      <ion-row>
+       <ion-col class="greenCase" id="3" (click)="display('n3')">
+         SESSIONS PARAMÉDICALES
+         <br>
+         <span class="dateCongres">
+          Jeudi 22 Novembre 2018
+         </span>
+       </ion-col>
+       <ion-col class="greenCase" id="4" (click)="display('n4')">
+         SESSIONS PARAMÉDICALES
+         <br>
+         <span class="dateCongres">
+          Vendredi 23 Novembre 2018
+         </span>
+       </ion-col>
+      </ion-row>
+  </ion-grid>
+
+  <ion-card id="n1">
+
         <ion-card-header class="titleMedical">
           ÂGES EXTRÊMES DE LA VIE :
           <br>
           RÉANIMATION PÉDIATRIQUE
         </ion-card-header>
-        <ion-card-content>
 
+        <ion-card-content>
           <div>
             <div>
               <ion-icon name="clock"></ion-icon>
@@ -38,7 +72,7 @@
               <ion-icon name="person"></ion-icon>
               É. JAVOUHEY (LYON)
             </div>
-            <h2>LE “B.A.-BA” POUR LE RÉANIMATEUR ADULTE</h2>
+            <h2 style="letter-spacing: 1px;">LE “B.A.-BA” POUR LE RÉANIMATEUR ADULTE</h2>
           </div>
           <hr>
           <div>
@@ -68,13 +102,630 @@
           <h3>PAUSE POUR VISITE DES STANDS</h3>
 
         </ion-card-content>
+
+        <ion-card-header class="titleMedical">
+          ÂGES EXTRÊMES DE LA VIE :
+          <br>
+          PERSONNES ÂGÉES
+        </ion-card-header>
+
+        <ion-card-content>
+          <div>
+            <div>
+              <ion-icon name="clock"></ion-icon>
+              11H15 : 11H45
+            </div>
+            <div>
+              <ion-icon name="person"></ion-icon>
+              S. DREVET (GRENOBLE)
+            </div>
+            <h2 style="letter-spacing: 1px;">ÉVALUATION DE LA FRAGILITÉ AUX URGENCES ET EN RÉANIMATION</h2>
+          </div>
+          <hr>
+          <div>
+            <div>
+              <ion-icon name="clock"></ion-icon>
+              11H45 : 12H15
+            </div>
+            <div>
+              <ion-icon name="person"></ion-icon>
+              B. GUIDET (PARIS)
+            </div>
+            <h2>INSUFFISANCE RESPIRATOIRE AIGUË DU NOURRISSON</h2>
+          </div>
+          <hr>
+          <div>
+            <div>
+              <ion-icon name="clock"></ion-icon>
+              12H15 : 12H45
+            </div>
+            <div>
+              <ion-icon name="person"></ion-icon>
+              C. LECLAIRE (PARIS)
+            </div>
+            <h2>APRÈS LA RÉANIMATION</h2>
+          </div>
+          <hr>
+          <h3>PAUSE DÉJEUNER — VISITE DES STANDS</h3>
+
+        </ion-card-content>
+
+        <ion-card-header class="titleMedical">
+          PATHOLOGIE INFECTIEUSE (1)
+        </ion-card-header>
+
+        <ion-card-content>
+          <div>
+            <div>
+              <ion-icon name="clock"></ion-icon>
+              14H30 : 15H00
+            </div>
+            <div>
+              <ion-icon name="person"></ion-icon>
+              S. NSEIR (LILLE)
+            </div>
+            <h2>TRACHÉOBRONCHITES</h2>
+          </div>
+          <hr>
+          <div>
+            <div>
+              <ion-icon name="clock"></ion-icon>
+              15H00 : 15H30
+            </div>
+            <div>
+              <ion-icon name="person"></ion-icon>
+              M. WOLFF (PARIS)
+            </div>
+            <h2>RISQUES ÉMERGENTS DES BACTÉRIES HAUTEMENT RÉSISTANTES</h2>
+          </div>
+          <hr>
+          <div>
+            <div>
+              <ion-icon name="clock"></ion-icon>
+              15H30 : 16H00
+            </div>
+            <div>
+              <ion-icon name="person"></ion-icon>
+              N. DE PROST (CRÉTEIL)
+            </div>
+            <h2>DERMO-HYPODERMITE</h2>
+          </div>
+          <hr>
+          <h3>PAUSE POUR VISITE DES STANDS</h3>
+        </ion-card-content>
+
+        <ion-card-header class="titleMedical">
+          PATHOLOGIE INFECTIEUSE (2)
+        </ion-card-header>
+
+        <ion-card-content>
+          <div>
+            <div>
+              <ion-icon name="clock"></ion-icon>
+              16H30 : 17H00
+            </div>
+            <div>
+              <ion-icon name="person"></ion-icon>
+              J-L. VINCENT (BRUXELLES)
+            </div>
+            <h2>VERS UNE PRISE EN CHARGE PERSONNALISÉE DU SEPSIS</h2>
+          </div>
+          <hr>
+          <div>
+            <div>
+              <ion-icon name="clock"></ion-icon>
+              17H00 : 17H30
+            </div>
+            <div>
+              <ion-icon name="person"></ion-icon>
+              D. ANNANE (GARCHES)
+            </div>
+            <h2>RESTE-T-IL UNE PLACE POUR LES CORTICOÏDES DANS LE CHOC SEPTIQUE ?</h2>
+          </div>
+          <hr>
+          <div>
+            <div>
+              <ion-icon name="clock"></ion-icon>
+              17H30 : 18H00
+            </div>
+            <div>
+              <ion-icon name="person"></ion-icon>
+              N. DUFOUR (PONTOISE)
+            </div>
+            <h2 style="letter-spacing: 1px;">BACTÉRIOPHAGES EN ALTERNATIVE À L’ANTIBIOTHÉRAPIE ?</h2>
+          </div>
+        </ion-card-content>
+
       </ion-card>
 
-    </ion-slide>
+  <ion-card id="n2">
+    <ion-card-header class="titleMedical">
+      ACTUALITÉ EN RÉANIMATION
+      <br>
+      RESPIRATOIRE (1)
+    </ion-card-header>
 
-    <ion-slide>
-      <h2>Slide 2</h2>
-    </ion-slide>
+    <ion-card-content>
+      <div>
+        <div>
+          <ion-icon name="clock"></ion-icon>
+          08H30 - 09H00
+        </div>
+        <div>
+          <ion-icon name="person"></ion-icon>
+          J-B. LASCARROU (NANTES)
+        </div>
+        <h2>INTUBATION TRACHÉALE</h2>
+      </div>
+      <hr>
+      <div>
+        <div>
+          <ion-icon name="clock"></ion-icon>
+          09H00 - 09H30
+        </div>
+        <div>
+          <ion-icon name="person"></ion-icon>
+          S. SILVA (TOULOUSE)
+        </div>
+        <h2>ECHOGRAPHIE PULMONAIRE</h2>
+      </div>
+      <hr>
+      <div>
+        <div>
+          <ion-icon name="clock"></ion-icon>
+          09H30 - 10H00
+        </div>
+        <div>
+          <ion-icon name="person"></ion-icon>
+          A. VIEILLARD-BARON (BOULOGNE)
+        </div>
+        <h2 style="letter-spacing: 1px;">MONITORAGE DU RETENTISSEMENT HÉMODYNAMIQUE</h2>
+      </div>
+      <hr>
+      <h3>PAUSE POUR VISITE DES STANDS</h3>
 
-  </ion-slides>
+    </ion-card-content>
+
+    <ion-card-header class="titleMedical">
+      ACTUALITÉ EN RÉANIMATION
+      <br>
+      RESPIRATOIRE (2)
+    </ion-card-header>
+
+    <ion-card-content>
+      <div>
+        <div>
+          <ion-icon name="clock"></ion-icon>
+          10H45 - 11H15
+        </div>
+        <div>
+          <ion-icon name="person"></ion-icon>
+          A. MERCAT (ANGERS)
+        </div>
+        <h2 style="letter-spacing: 1px;">RECRUTEMENT ALVÉOLAIRE AU COURS DU SDRA</h2>
+      </div>
+      <hr>
+      <div>
+        <div>
+          <ion-icon name="clock"></ion-icon>
+          11H15 - 11H45
+        </div>
+        <div>
+          <ion-icon name="person"></ion-icon>
+          M. SCHMIDT (PARIS)
+        </div>
+        <h2>VENTILATION ET ECMO</h2>
+      </div>
+      <hr>
+      <div>
+        <div>
+          <ion-icon name="clock"></ion-icon>
+          11H45 - 12H15
+        </div>
+        <div>
+          <ion-icon name="person"></ion-icon>
+          N. TERZI (GRENOBLE)
+        </div>
+        <h2 style="letter-spacing: 1px;">SEVRAGE VENTILATOIRE DIFFICILE</h2>
+      </div>
+      <hr>
+      <h3>PAUSE DÉJEUNER — VISITE DES STANDS</h3>
+
+    </ion-card-content>
+
+
+    <ion-card-header class="orangeCase">
+      CONFÉRENCES DE PRESTIGE :
+      <br>
+      RISQUES SANITAIRES EXCEPTIONNELS
+    </ion-card-header>
+
+    <ion-card-content>
+      <div>
+        <div>
+          <ion-icon name="clock"></ion-icon>
+          14H00 - 14H45
+        </div>
+        <div>
+          <ion-icon name="person"></ion-icon>
+          V. MASSON-DELMOTTE (PARIS)
+        </div>
+        <h2>LES ENJEUX CLIMATIQUES</h2>
+      </div>
+      <hr>
+      <div>
+        <div>
+          <ion-icon name="clock"></ion-icon>
+          14H45 - 15H30
+        </div>
+        <div>
+          <ion-icon name="person"></ion-icon>
+          S. AUSSET (PARIS)
+        </div>
+        <h2>APPORTS DE LA MÉDECINE MILITAIRE</h2>
+      </div>
+      <hr>
+      <div>
+        <div>
+          <ion-icon name="clock"></ion-icon>
+          15H30 - 16H15
+        </div>
+        <div>
+          <ion-icon name="person"></ion-icon>
+          P. CARLI (PARIS)
+        </div>
+        <h2 style="letter-spacing: 1px;">RETOUR D’EXPÉRIENCE DES ATTENTATS DE PARIS</h2>
+      </div>
+      <hr>
+      <div>
+        <div>
+          <ion-icon name="clock"></ion-icon>
+          16H15 - 17H00
+        </div>
+        <div>
+          <ion-icon name="person"></ion-icon>
+          N. PRIETO (LYON)
+        </div>
+        <h2 style="letter-spacing: 1px;">PRISE EN CHARGE MÉDICO-PSYCHOLOGIQUE</h2>
+      </div>
+
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card id="n3">
+
+    <ion-card-header class="titleParamedical">
+      ÂGES EXTRÊMES DE LA VIE :
+      <br>
+      RÉANIMATION PÉDIATRIQUE
+    </ion-card-header>
+
+    <ion-card-content>
+      <div>
+        <div>
+          <ion-icon name="clock"></ion-icon>
+          09H00 - 09H30
+        </div>
+        <div>
+          <ion-icon name="person"></ion-icon>
+          F. COUR-ANDLAUER (LYON)
+        </div>
+        <h2>LE « B.A.-BA » POUR L’INFIRMIÈRE</h2>
+      </div>
+      <hr>
+      <div>
+        <div>
+          <ion-icon name="clock"></ion-icon>
+          09H30 - 10H00
+        </div>
+        <div>
+          <ion-icon name="person"></ion-icon>
+          L. DE SAINT BLANQUAT (PARIS)
+        </div>
+        <h2>MIEUX VIVRE LA RÉANIMATION</h2>
+      </div>
+      <hr>
+      <div>
+        <div>
+          <ion-icon name="clock"></ion-icon>
+          10H00 - 10H30
+        </div>
+        <div>
+          <ion-icon name="person"></ion-icon>
+          Y. GILLET (LYON)
+        </div>
+        <h2 style="letter-spacing: 1px;">FORMES GRAVES DES MALADIES INFANTILES</h2>
+      </div>
+      <hr>
+      <div>
+        <div>
+          <ion-icon name="clock"></ion-icon>
+          10H30 - 11H00
+        </div>
+        <div>
+          <ion-icon name="person"></ion-icon>
+          F. BORDET (LYON)
+        </div>
+        <h2 style="letter-spacing: 1px;">FIN DE VIE : ACCOMPAGNEMENT DES FAMILLES</h2>
+      </div>
+      <hr>
+      <h3>PAUSE POUR VISITE DES STANDS</h3>
+
+    </ion-card-content>
+
+    <ion-card-header class="titleParamedical">
+      ÂGES EXTRÊMES DE LA VIE :
+      <br>
+      PERSONNES ÂGÉES EN RÉANIMATION
+    </ion-card-header>
+
+    <ion-card-content>
+      <div>
+        <div>
+          <ion-icon name="clock"></ion-icon>
+          11H45 - 12H15
+        </div>
+        <div>
+          <ion-icon name="person"></ion-icon>
+          J. MERCIER (LYON)
+        </div>
+        <h2 style="letter-spacing: 1px;">COMMENT ÉVALUER LA FRAGILITÉ DE LA PERSONNE ÂGÉE ?</h2>
+      </div>
+      <hr>
+      <div>
+        <div>
+          <ion-icon name="clock"></ion-icon>
+          12H15 - 12H45
+        </div>
+        <div>
+          <ion-icon name="person"></ion-icon>
+          C. AUBOYER (SAINT-ETIENNE)
+        </div>
+        <h2>PRONOSTIC ET DEVENIR</h2>
+      </div>
+      <hr>
+      <h3>PAUSE DÉJEUNER — VISITE DES STANDS</h3>
+
+    </ion-card-content>
+
+    <ion-card-header class="titleParamedical">
+      CHOC SEPTIQUE
+    </ion-card-header>
+
+    <ion-card-content>
+      <div>
+        <div>
+          <ion-icon name="clock"></ion-icon>
+          14H30 - 15H00
+        </div>
+        <div>
+          <ion-icon name="person"></ion-icon>
+          R. HERNU (LYON)
+        </div>
+        <h2>LES 10 POINTS CLÉS</h2>
+      </div>
+      <hr>
+      <div>
+        <div>
+          <ion-icon name="clock"></ion-icon>
+          15H00 - 15H30
+        </div>
+        <div>
+          <ion-icon name="person"></ion-icon>
+          R. MAHIEU (ANGERS)
+        </div>
+        <h2>BONNE PRATIQUE DES HÉMOCULTURES</h2>
+      </div>
+      <hr>
+      <div>
+        <div>
+          <ion-icon name="clock"></ion-icon>
+          15H30 - 16H00
+        </div>
+        <div>
+          <ion-icon name="person"></ion-icon>
+          S. ROUX (BOURG-EN-BRESSE)
+        </div>
+        <h2 style="letter-spacing: 1px;">RÔLE PROPRE DE L’INFIRMIÈRE DANS LA PRISE EN CHARGE</h2>
+      </div>
+      <hr>
+      <h3>PAUSE POUR VISITE DES STANDS</h3>
+
+    </ion-card-content>
+
+    <ion-card-header class="titleParamedical">
+      PARTAGE D’EXPÉRIENCE (1)
+    </ion-card-header>
+
+    <ion-card-content>
+      <div>
+        <div>
+          <ion-icon name="clock"></ion-icon>
+          16H30 - 17H00
+        </div>
+        <div>
+          <ion-icon name="person"></ion-icon>
+          V. SOUPPART (PARIS)
+        </div>
+        <h2>PARTICIPATION DES FAMILLES AUX SOINS</h2>
+      </div>
+      <hr>
+      <div>
+        <div>
+          <ion-icon name="clock"></ion-icon>
+          17H00 - 17H30
+        </div>
+        <div>
+          <ion-icon name="person"></ion-icon>
+          A. MASSARD & S. VILLOT (DIJON)
+        </div>
+        <h2>RECHERCHE CLINIQUE : RÔLE DES SOIGNANTS</h2>
+      </div>
+      <hr>
+      <div>
+        <div>
+          <ion-icon name="clock"></ion-icon>
+          17H30 - 18H00
+        </div>
+        <div>
+          <ion-icon name="person"></ion-icon>
+          B. DELWARDE & M. MORTAMAIS (LYON)
+        </div>
+        <h2>SIMULATION IN SITU</h2>
+      </div>
+    </ion-card-content>
+
+
+  </ion-card>
+
+  <ion-card id="n4">
+    <ion-card-header class="titleParamedical">
+      RÉANIMATION RESPIRATOIRE
+    </ion-card-header>
+
+    <ion-card-content>
+      <div>
+        <div>
+          <ion-icon name="clock"></ion-icon>
+          08H30 - 09H00
+        </div>
+        <div>
+          <ion-icon name="person"></ion-icon>
+          M. COUR (LYON)
+        </div>
+        <h2>INTUBATION TRACHÉALE</h2>
+      </div>
+      <hr>
+      <div>
+        <div>
+          <ion-icon name="clock"></ion-icon>
+          09H00 - 09H30
+        </div>
+        <div>
+          <ion-icon name="person"></ion-icon>
+          E. VIVIER (LYON)
+        </div>
+        <h2>LES INFORMATIONS DU RESPIRATEUR</h2>
+      </div>
+      <hr>
+      <div>
+        <div>
+          <ion-icon name="clock"></ion-icon>
+          09H30 - 10H00
+        </div>
+        <div>
+          <ion-icon name="person"></ion-icon>
+          S. VALERA (MARSEILLE)
+        </div>
+        <h2 style="letter-spacing: 1px;">SDRA : GESTION PARAMÉDICALE DE LA SÉDATION/CURARISATION</h2>
+      </div>
+      <hr>
+      <div>
+        <div>
+          <ion-icon name="clock"></ion-icon>
+          10H00 – 10H30
+        </div>
+        <div>
+          <ion-icon name="person"></ion-icon>
+          M. ALCACER & D. THÉVOZ (LAUSANNE)
+        </div>
+        <h2 style="letter-spacing: 1px;">VENTILATION PROLONGÉE : APPROCHE PLURIDISCIPLINAIRE</h2>
+      </div>
+      <hr>
+      <h3>PAUSE POUR VISITE DES STANDS</h3>
+
+    </ion-card-content>
+
+    <ion-card-header class="titleMedical">
+      PARTAGE D’EXPÉRIENCE (2)
+    </ion-card-header>
+
+    <ion-card-content>
+      <div>
+        <div>
+          <ion-icon name="clock"></ion-icon>
+          11H15 – 11H45
+        </div>
+        <div>
+          <ion-icon name="person"></ion-icon>
+          G. BURELLI (ROANNE)
+        </div>
+        <h2>MIEUX INFORMER LES FAMILLES</h2>
+      </div>
+      <hr>
+      <div>
+        <div>
+          <ion-icon name="clock"></ion-icon>
+          11H45 – 12H15
+        </div>
+        <div>
+          <ion-icon name="person"></ion-icon>
+          E. MERCIER & M. VILLETTE (TOURS)
+        </div>
+        <h2 style="letter-spacing: 1px;">PRÉLÈVEMENT D’ORGANES : PROCÉDURE MAASTRICHT 3</h2>
+      </div>
+      <hr>
+      <h3>PAUSE DÉJEUNER — VISITE DES STANDS</h3>
+
+    </ion-card-content>
+
+
+    <ion-card-header class="orangeCase">
+      CONFÉRENCES DE PRESTIGE :
+      <br>
+      RISQUES SANITAIRES EXCEPTIONNELS
+    </ion-card-header>
+
+    <ion-card-content>
+      <div>
+        <div>
+          <ion-icon name="clock"></ion-icon>
+          14H00 - 14H45
+        </div>
+        <div>
+          <ion-icon name="person"></ion-icon>
+          V. MASSON-DELMOTTE (PARIS)
+        </div>
+        <h2>LES ENJEUX CLIMATIQUES</h2>
+      </div>
+      <hr>
+      <div>
+        <div>
+          <ion-icon name="clock"></ion-icon>
+          14H45 - 15H30
+        </div>
+        <div>
+          <ion-icon name="person"></ion-icon>
+          S. AUSSET (PARIS)
+        </div>
+        <h2>APPORTS DE LA MÉDECINE MILITAIRE</h2>
+      </div>
+      <hr>
+      <div>
+        <div>
+          <ion-icon name="clock"></ion-icon>
+          15H30 - 16H15
+        </div>
+        <div>
+          <ion-icon name="person"></ion-icon>
+          P. CARLI (PARIS)
+        </div>
+        <h2 style="letter-spacing: 1px;">RETOUR D’EXPÉRIENCE DES ATTENTATS DE PARIS</h2>
+      </div>
+      <hr>
+      <div>
+        <div>
+          <ion-icon name="clock"></ion-icon>
+          16H15 - 17H00
+        </div>
+        <div>
+          <ion-icon name="person"></ion-icon>
+          N. PRIETO (LYON)
+        </div>
+        <h2 style="letter-spacing: 1px;">PRISE EN CHARGE MÉDICO-PSYCHOLOGIQUE</h2>
+      </div>
+
+    </ion-card-content>
+  </ion-card>
+  <ion-icon name="arrow-up" (click)="scrollToTop()" class="buttonScrollTop"></ion-icon>
 </ion-content>

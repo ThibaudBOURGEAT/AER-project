@@ -31,4 +31,82 @@ page-congress {
         margin-bottom: 15px;
       }
     }
+  ion-col{
+    font-weight: bold;
+  }
+  .contentBanner{
+    margin-top: 0px;
+    background: #003590;
+    background: url("../../assets/imgs/banniere-1024x143.jpg") center no-repeat;
+    height:150px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+   button{
+     margin-top:45px;
+     margin-bottom: 45px;
+     font-size: 15px;
+     color:white;
+     background: #f39200;
+     padding: 5px 10px;
+     line-height: 1.2;
+     position:relative;
+     margin-left: calc(50% - 141px);
+   }
+
+  .blueCase{
+    background: #003590;
+    border: 1px solid white;
+    color:white;
+    height: 85px;
+    padding-top: 15px;
+  }
+  .greenCase{
+    background: #17b55e;
+    border: 1px solid white;
+    color:white;
+    height: 85px;
+    padding-top: 15px;
+  }
+
+//0478007011 Consierge SIMON
+  #n1{
+    display:block;
+  }
+  #n2{
+    display:none;
+    margin-top: 10px;
+  }
+  #n3{
+    display:none;
+    margin-top: 10px;
+  }
+  #n4{
+    display:none;
+    margin-top: 10px;
+  }
+
+
+  .dateCongres{
+    font-size: smaller;
+    font-weight: normal;
+  }
+  .info{
+    margin-top: 0px;
+    padding-top: 60px;
+  }
+
+  .buttonScrollTop{
+    background: rgba(243,146,0,0.7);
+    font-size: 25px;
+    padding: 5px 10px;
+    vertical-align: center;
+    border-radius: 10%;
+    color: white;
+    position:fixed;
+    right:25px;
+    bottom:25px;
+  }
 }
