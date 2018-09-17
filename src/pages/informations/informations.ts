@@ -17,9 +17,4 @@ export class InformationsPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad InformationsPage');
-  }
-
 }

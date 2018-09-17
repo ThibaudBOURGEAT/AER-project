@@ -6,9 +6,9 @@
 
 </ion-header>
 
-<ion-content padding>
-  <div class="contentBanner" *ngIf="content != null">
-    <img src="{{img}}">
+<ion-content>
+  <img src="{{img}}">
+  <div class="contentBanner" *ngIf="content != null" padding>  
     <h1 class="info title">{{content['title'].rendered}}</h1>
     <br>
     <div class="infoPratNew" [innerHTML]="content['content'].rendered">

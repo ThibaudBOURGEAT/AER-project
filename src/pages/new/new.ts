@@ -20,7 +20,6 @@ export class NewPage {
      this.api.getNew(this.navParams.get('id'))
      .then(data => {
        this.content = data;
-       console.log(typeof data['date']);
        this.api.getPicture(data['featured_media'])
        .then(data => {
            this.img = data['guid'].rendered;

@@ -19,9 +19,4 @@ export class MenuPage {
   popView(){
     this.navCtrl.pop();
   }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad MenuPage');
-  }
-
 }
