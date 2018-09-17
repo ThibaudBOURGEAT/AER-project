@@ -8,10 +8,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { TopicalityProvider } from '../providers/topicality/topicality';
 import { DatePipe } from '@angular/common';
 
-import { File } from '@ionic-native/file';
-import { FileTransfer } from '@ionic-native/file-transfer';
-import { DocumentViewer } from '@ionic-native/document-viewer';
-
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { WhoAreWePage } from '../pages/who-are-we/who-are-we';
@@ -59,9 +55,6 @@ import { ContactPage } from '../pages/contact/contact';
     SplashScreen,
     TopicalityProvider,
     DatePipe,
-    File,
-    FileTransfer,
-    DocumentViewer,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
