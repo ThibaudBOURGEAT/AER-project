@@ -38,10 +38,12 @@ comite {
     word-wrap: break-word;
   }
   .profil{
-    height: 120px;
+    max-height: 120px;
+    min-width: 100px;
     width: auto;
     border-radius: 5px;
-    margin-left: calc(50% - 90px);
+    position:relative;
+    margin:0 auto;
   }
 
   .profilLogo{
