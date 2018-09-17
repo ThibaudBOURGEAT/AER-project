@@ -17,6 +17,7 @@ import { TopicalityPage } from '../pages/topicality/topicality';
 import { CongressPage } from '../pages/congress/congress';
 import { NewPage } from '../pages/new/new';
 import { ComiteComponent } from '../components/comite/comite';
+import { ContactPage } from '../pages/contact/contact';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ComiteComponent } from '../components/comite/comite';
     TopicalityPage,
     CongressPage,
     ComiteComponent,
-    NewPage
+    NewPage,
+    ContactPage
   ],
   imports: [
     BrowserModule,
@@ -45,7 +47,8 @@ import { ComiteComponent } from '../components/comite/comite';
     TopicalityPage,
     CongressPage,
     ComiteComponent,
-    NewPage
+    NewPage,
+    ContactPage
   ],
   providers: [
     StatusBar,

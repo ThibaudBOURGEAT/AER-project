@@ -1,0 +1,39 @@
+page-contact {
+  h5{
+    color:#31afde;
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
+  .select{
+    ion-label {
+      font-size: 1.2rem;
+    }
+    ion-select{
+      width: 100% !important;
+    }
+  }
+  .send{
+    background: #f39200;
+    color:white;
+    letter-spacing: 2px;
+    padding: 10px;
+    float: right;
+  }
+
+  .secretariat{
+    margin-top: 90px;
+    ion-icon{
+      font-size: 25px;
+      color:#003590;
+    }
+    ion-label{
+      -ms-text-overflow: unset;
+      text-overflow: unset;
+    }
+  }
+
+  h6{
+    color:#31afde;
+    letter-spacing: 2px;
+  }
+}
