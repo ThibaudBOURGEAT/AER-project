@@ -8,6 +8,8 @@ page-new {
       color: black;
       display: block;
       font-weight: bold;
+      text-transform: uppercase;
+      color: rgb(50,50,50);
     }
     margin-top: 0px;
     background: #003590;
@@ -20,7 +22,7 @@ page-new {
 
   .infoPratNew{
       text-align: justify;
-      color:gray;
+      color:grey;
       display: block;
   }
 

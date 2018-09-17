@@ -11,6 +11,5 @@ export const PAGES: any[] = [
   CongressPage,
   InformationsPage,
   TopicalityPage,
-  TopicalityPage,
   ContactPage
 ];

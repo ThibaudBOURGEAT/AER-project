@@ -7,13 +7,15 @@
 </ion-header>
 
 <ion-content>
-  <ion-list inset *ngIf="news != null">
+  <ion-list inset *ngIf="news != null && imgs != null">
       <ion-card *ngFor="let new of news, let i = index">
         <img src="{{imgs[i]}}">
-        <ion-card-content>
-          <ion-card-title (click)="pushPage(new.id)">
-            {{new.title.rendered}}
+        <ion-card-content (click)="pushPage(new.id)">
+          <p class="date"><i>{{new['date'] | date:'d/MM/y'}}</i></p>
+          <ion-card-title class="title">
+            {{new['title'].rendered}}
           </ion-card-title>
+          <div class="text" [innerHTML]="new['content'].rendered"></div>
         </ion-card-content>
       </ion-card>
   </ion-list>

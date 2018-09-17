@@ -2,6 +2,10 @@ import { Component, ViewChild  } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { Content } from 'ionic-angular';
 
+import { File } from '@ionic-native/file';
+import { FileTransfer } from '@ionic-native/file-transfer';
+import { DocumentViewer } from '@ionic-native/document-viewer';
+
 @Component({
   selector: 'page-congress',
   templateUrl: 'congress.html',
@@ -20,6 +24,7 @@ export class CongressPage {
   scrollToTop() {
     this.content.scrollToTop();
   }
+
 
    public display(id:string):void{
       if(id == 'n1'){
