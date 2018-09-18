@@ -1,8 +1,11 @@
 import { NgModule } from '@angular/core';
 import { ComiteComponent } from './comite/comite';
+import { PartenaireComponent } from './partenaire/partenaire';
 @NgModule({
-	declarations: [ComiteComponent],
+	declarations: [ComiteComponent,
+    PartenaireComponent],
 	imports: [],
-	exports: [ComiteComponent]
+	exports: [ComiteComponent,
+    PartenaireComponent]
 })
 export class ComponentsModule {}

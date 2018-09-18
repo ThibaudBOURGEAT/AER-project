@@ -1,4 +1,14 @@
 page-topicality {
+  .contentBanner{
+    margin-top: 0px;
+    background: url("../../assets/imgs/banniere-3-1024x149.jpg") center no-repeat;
+    height:150px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
   ion-card{
     .date{
       color: rgb(76,175,222);

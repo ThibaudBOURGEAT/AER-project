@@ -19,7 +19,12 @@ page-informations {
     padding-top: 20px;
     padding-bottom: 20px;
   }
-
+  .hebergement a:focus{
+    color: rgba(0, 0, 0, 0.7);
+  }
+  em a:focus{
+    color: rgba(32, 94, 127, 0.62);
+  }
   .hebergement a{
     text-decoration: none;
     color:black;
@@ -38,6 +43,9 @@ page-informations {
   .access a{
     color: red;
     text-decoration: none;
+  }
+  .access a:focus{
+    color: rgba(255, 0, 0, 0.62);
   }
 
 }

@@ -17,6 +17,7 @@ import { TopicalityPage } from '../pages/topicality/topicality';
 import { CongressPage } from '../pages/congress/congress';
 import { NewPage } from '../pages/new/new';
 import { ComiteComponent } from '../components/comite/comite';
+import { PartenaireComponent } from '../components/partenaire/partenaire';
 import { ContactPage } from '../pages/contact/contact';
 
 @NgModule({
@@ -30,7 +31,8 @@ import { ContactPage } from '../pages/contact/contact';
     CongressPage,
     ComiteComponent,
     NewPage,
-    ContactPage
+    ContactPage,
+    PartenaireComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +50,8 @@ import { ContactPage } from '../pages/contact/contact';
     CongressPage,
     ComiteComponent,
     NewPage,
-    ContactPage
+    ContactPage,
+    PartenaireComponent
   ],
   providers: [
     StatusBar,

@@ -18,7 +18,9 @@
   <div class="contentBanner">
     <h1 class="info">CONGRÈS 2018</h1>
   </div>
+
   <button href="#" onclick="window.open('https://aer-congres.com/wp-content/uploads/2018/07/AER_PROGRAMME_2018_BD.pdf', '_system', 'location=yes');">VOIR LE PROGRAMME COMPLET (PDF)</button>
+
   <ion-grid>
       <ion-row>
        <ion-col class="blueCase" id="1" (click)="display('n1')" style="background: #4572be;">
@@ -727,5 +729,8 @@
 
     </ion-card-content>
   </ion-card>
-  <ion-icon name="arrow-up" (click)="scrollToTop()" class="buttonScrollTop"></ion-icon>
+
+  <partenaire></partenaire>
+
+  <ion-icon name="arrow-up" (click)="scrollToTop()" class="buttonScrollTop"style="z-index: 1 !important;" ></ion-icon>
 </ion-content>
