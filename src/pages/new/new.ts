@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { TopicalityProvider } from '../../providers/topicality/topicality';
-import { DatePipe } from '@angular/common';
 
 @Component({
   selector: 'page-new',
