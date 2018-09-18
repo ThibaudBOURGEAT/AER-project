@@ -20,33 +20,33 @@
 
       <ion-item class="select">
         <ion-label>Vous êtes</ion-label>
-        <ion-select>
-          <ion-option>Médical</ion-option>
-          <ion-option>Paramédical</ion-option>
+        <ion-select [(ngModel)]="youAre" name="youAre" type="text">
+          <ion-option value="Médical">Médical</ion-option>
+          <ion-option value="Paramédical">Paramédical</ion-option>
         </ion-select>
       </ion-item>
 
       <ion-item>
         <ion-label stacked>Votre nom</ion-label>
-        <ion-input type="text"></ion-input>
+        <ion-input [(ngModel)]="name" name="name" type="text"></ion-input>
       </ion-item>
 
       <ion-item>
         <ion-label stacked>Votre email</ion-label>
-        <ion-input type="email"></ion-input>
+        <ion-input [(ngModel)]="yourEmail" name="yourEmail" type="email"></ion-input>
       </ion-item>
 
       <ion-item>
         <ion-label stacked>Sujet</ion-label>
-        <ion-input type="text"></ion-input>
+        <ion-input [(ngModel)]="subject" name="subject" type="text"></ion-input>
       </ion-item>
 
       <ion-item>
         <ion-label stacked>Votre message</ion-label>
-        <ion-textarea></ion-textarea>
+        <ion-textarea [(ngModel)]="message" name="message" type="text"></ion-textarea>
       </ion-item>
     </ion-list>
-    <button class="send">ENVOYER</button>
+    <button class="send" (click)="send()">ENVOYER</button>
   </form>
 
 
