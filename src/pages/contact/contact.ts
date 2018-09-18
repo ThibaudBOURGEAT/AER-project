@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { EmailComposer } from '@ionic-native/email-composer';
 
 /**
  * Generated class for the ContactPage page.
@@ -15,11 +16,36 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ContactPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  youAre: String;
+  name: String;
+  yourEmail: String;
+  subject: String;
+  message: String;
+
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, private emailComposer: EmailComposer) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad ContactPage');
+  body(){
+    return "Profession : " + this.youAre +
+    ",\nNom : " + this.name +
+    ",\nEmail : " + this.yourEmail +
+    ",\nSujet : " + this.subject +
+    ",\nMessage : " + this.message;
+  }
+
+  send(){
+    let email = {
+      to: 'trax.69@hotmail.fr',
+      cc: [],
+      bcc: [],
+      attachment: [],
+      subject: 'Contact depuis le site aer-congres.com',
+      body: this.body(),
+      isHtml: false
+    };
+    console.log(this.body());
+    this.emailComposer.open(email);
   }
 
 }

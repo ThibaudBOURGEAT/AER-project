@@ -3,7 +3,6 @@ import { NavController } from 'ionic-angular';
 import { TopicalityProvider } from '../../providers/topicality/topicality';
 import { NewPage } from '../../pages/new/new';
 import { LoadingController } from 'ionic-angular';
-import { AlertController } from 'ionic-angular';
 
 @Component({
   selector: 'page-topicality',

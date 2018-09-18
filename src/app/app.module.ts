@@ -7,6 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { TopicalityProvider } from '../providers/topicality/topicality';
 import { DatePipe } from '@angular/common';
+import { EmailComposer } from '@ionic-native/email-composer';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -58,6 +59,7 @@ import { ContactPage } from '../pages/contact/contact';
     SplashScreen,
     TopicalityProvider,
     DatePipe,
+    EmailComposer,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
