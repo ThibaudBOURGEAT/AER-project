@@ -12,7 +12,7 @@ export class HomePage {
 
   }
 
-  pushPage(){
+  pushCongressPage(){
     this.navCtrl.pop();
     this.navCtrl.push(CongressPage);
   }
