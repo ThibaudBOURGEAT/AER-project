@@ -12,11 +12,7 @@ import { Component } from '@angular/core';
 })
 export class ComiteComponent {
 
-  text: string;
-
   constructor() {
-    console.log('Hello ComiteComponent Component');
-    this.text = 'Hello World';
   }
 
 }

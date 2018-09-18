@@ -19,6 +19,7 @@ import { NewPage } from '../pages/new/new';
 import { ComiteComponent } from '../components/comite/comite';
 import { PartenaireComponent } from '../components/partenaire/partenaire';
 import { ContactPage } from '../pages/contact/contact';
+import { IonicImageViewerModule } from 'ionic-img-viewer';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { ContactPage } from '../pages/contact/contact';
   imports: [
     BrowserModule,
     HttpClientModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    IonicImageViewerModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [

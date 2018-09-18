@@ -25,6 +25,9 @@ page-informations {
   em a:focus{
     color: rgba(32, 94, 127, 0.62);
   }
+  .hebergement{
+    margin-bottom: 25px;
+  }
   .hebergement a{
     text-decoration: none;
     color:black;
@@ -36,6 +39,7 @@ page-informations {
     background-size: cover;
     color:white;
     margin-top: -5px;
+    margin-bottom: 20px;
   }
   .access p {
     color:white;
