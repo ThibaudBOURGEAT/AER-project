@@ -44,8 +44,8 @@ export class ContactPage {
       body: this.body(),
       isHtml: false
     };
-    console.log(this.body());
     this.emailComposer.open(email);
+    this.navCtrl.pop();
   }
 
 }
