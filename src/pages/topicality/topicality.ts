@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { TopicalityProvider } from '../../providers/topicality/topicality';
 import { NewPage } from '../../pages/new/new';
+import { LoadingController } from 'ionic-angular';
+import { AlertController } from 'ionic-angular';
 
 @Component({
   selector: 'page-topicality',
@@ -12,8 +14,7 @@ export class TopicalityPage {
   news: any;
   imgs: any[];
 
-  constructor(public navCtrl: NavController, public api: TopicalityProvider) {
-    this.getPictures();
+  constructor(public navCtrl: NavController, public api: TopicalityProvider, public loadingCtrl: LoadingController) {
     this.getNews();
   }
 
@@ -22,15 +23,9 @@ export class TopicalityPage {
    }
 
    getNews(){
-        this.api.getNews()
-        .then(data => {
-          this.news = data;
-        });
-    }
-
-   getPictures(){
       this.api.getNews()
       .then(data => {
+        this.news = data;
         var pictures = new Array(data['length']);
         for(let i in data){
           this.api.getPicture(data[i].featured_media)
