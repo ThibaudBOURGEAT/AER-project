@@ -9,6 +9,10 @@ import { TopicalityProvider } from '../providers/topicality/topicality';
 import { DatePipe } from '@angular/common';
 import { EmailComposer } from '@ionic-native/email-composer';
 
+import { Firebase } from '@ionic-native/firebase';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFirestoreModule } from 'angularfire2/firestore';
+
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { WhoAreWePage } from '../pages/who-are-we/who-are-we';
@@ -21,6 +25,10 @@ import { ComiteComponent } from '../components/comite/comite';
 import { PartenaireComponent } from '../components/partenaire/partenaire';
 import { ContactPage } from '../pages/contact/contact';
 import { IonicImageViewerModule } from 'ionic-img-viewer';
+
+const firebase = {
+ // your firebase web config
+}
 
 @NgModule({
   declarations: [
@@ -40,7 +48,9 @@ import { IonicImageViewerModule } from 'ionic-img-viewer';
     BrowserModule,
     HttpClientModule,
     IonicModule.forRoot(MyApp),
-    IonicImageViewerModule
+    IonicImageViewerModule,
+    AngularFireModule.initializeApp(firebase),
+    AngularFirestoreModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -62,6 +72,7 @@ import { IonicImageViewerModule } from 'ionic-img-viewer';
     TopicalityProvider,
     DatePipe,
     EmailComposer,
+    Firebase,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
