@@ -10,12 +10,10 @@ import { DatePipe } from '@angular/common';
 import { EmailComposer } from '@ionic-native/email-composer';
 
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
 import { WhoAreWePage } from '../pages/who-are-we/who-are-we';
 import { MenuPage } from '../pages/menu/menu';
 import { InformationsPage } from '../pages/informations/informations';
 import { TopicalityPage } from '../pages/topicality/topicality';
-import { CongressPage } from '../pages/congress/congress';
 import { NewPage } from '../pages/new/new';
 import { ComiteComponent } from '../components/comite/comite';
 import { PartenaireComponent } from '../components/partenaire/partenaire';
@@ -39,12 +37,10 @@ const firebase = {
 @NgModule({
   declarations: [
     MyApp,
-    HomePage,
     WhoAreWePage,
     MenuPage,
     InformationsPage,
     TopicalityPage,
-    CongressPage,
     ComiteComponent,
     NewPage,
     ContactPage,
@@ -61,12 +57,10 @@ const firebase = {
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage,
     WhoAreWePage,
     MenuPage,
     InformationsPage,
     TopicalityPage,
-    CongressPage,
     ComiteComponent,
     NewPage,
     ContactPage,
