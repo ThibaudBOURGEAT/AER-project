@@ -5,24 +5,27 @@
 </ion-header>
 
   <ion-content padding>
-    <ion-icon class="AER">
-      <img src="../../assets/imgs/AER_LOGOTYPE_CMJN_HORIZONTAL.png"/>
-    </ion-icon>
+    <img class="AER" src="../../assets/imgs/AER_LOGOTYPE_CMJN_HORIZONTAL.png"/>
 
     <div class="menu">
       <ion-row>
         <ion-col col-4></ion-col>
-        <ion-col col-4 (click)="pushPage(Pages[2])">
-          <img class="logo" src="../../assets/imgs/globe.png">
-          Congrès 2018
+        <ion-col col-4>
+          <a href="#" onclick="window.open('https://aer-congres.com/programme-congres-aer/', '_system', 'location=yes');">
+            <img class="logo" src="../../assets/imgs/globe.png">
+            Congrès 2018
+          </a>
         </ion-col>
       </ion-row>
+
       <ion-row>
-        <ion-col col-4 (click)="pushPage(Pages[0])">
+        <ion-col col-4>
+        <a href="#" onclick="window.open('https://aer-congres.com/', '_system', 'location=yes');">
           <img class="logo" src="../../assets/imgs/house.png">
           Accueil
+        </a>
         </ion-col>
-        <ion-col col-4 (click)="pushPage(Pages[1])">
+        <ion-col col-4 (click)="pushPage(Pages[0])">
           <img class="logo" src="../../assets/imgs/LogoLyon.png">
           Qui sommes nous ?
         </ion-col>
@@ -32,7 +35,7 @@
         </ion-col>
       </ion-row>
       <ion-row>
-        <ion-col col-4 (click)="pushPage(Pages[3])">
+        <ion-col col-4 (click)="pushPage(Pages[1])">
           <img class="logo" src="../../assets/imgs/information.png">
           Informations
         </ion-col>
@@ -42,14 +45,14 @@
           Inscription
           </a>
         </ion-col>
-        <ion-col col-4 (click)="pushPage(Pages[4])">
+        <ion-col col-4 (click)="pushPage(Pages[2])">
           <img class="logo" src="../../assets/imgs/news.png ">
           Actualités
         </ion-col>
       </ion-row>
       <ion-row>
         <ion-col col-4></ion-col>
-        <ion-col col-4 (click)="pushPage(Pages[5])">
+        <ion-col col-4 (click)="pushPage(Pages[3])">
           <img class="logo" src="../../assets/imgs/contact.png">
           Contact
         </ion-col>
