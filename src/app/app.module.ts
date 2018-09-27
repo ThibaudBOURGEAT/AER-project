@@ -18,6 +18,7 @@ import { NewPage } from '../pages/new/new';
 import { ComiteComponent } from '../components/comite/comite';
 import { PartenaireComponent } from '../components/partenaire/partenaire';
 import { ContactPage } from '../pages/contact/contact';
+import { MapPage } from '../pages/map/map';
 import { IonicImageViewerModule } from 'ionic-img-viewer';
 
 import { Firebase } from '@ionic-native/firebase';
@@ -44,7 +45,8 @@ const firebase = {
     ComiteComponent,
     NewPage,
     ContactPage,
-    PartenaireComponent
+    PartenaireComponent,
+    MapPage
   ],
   imports: [
     BrowserModule,
@@ -64,7 +66,8 @@ const firebase = {
     ComiteComponent,
     NewPage,
     ContactPage,
-    PartenaireComponent
+    PartenaireComponent,
+    MapPage
   ],
   providers: [
     StatusBar,
