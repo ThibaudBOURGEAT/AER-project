@@ -20,6 +20,7 @@ import { NewPage } from '../pages/new/new';
 import { ComiteComponent } from '../components/comite/comite';
 import { PartenaireComponent } from '../components/partenaire/partenaire';
 import { ContactPage } from '../pages/contact/contact';
+import { MapPage } from '../pages/map/map';
 import { IonicImageViewerModule } from 'ionic-img-viewer';
 
 @NgModule({
@@ -32,7 +33,8 @@ import { IonicImageViewerModule } from 'ionic-img-viewer';
     ComiteComponent,
     NewPage,
     ContactPage,
-    PartenaireComponent
+    PartenaireComponent,
+    MapPage
   ],
   imports: [
     BrowserModule,
@@ -50,7 +52,8 @@ import { IonicImageViewerModule } from 'ionic-img-viewer';
     ComiteComponent,
     NewPage,
     ContactPage,
-    PartenaireComponent
+    PartenaireComponent,
+    MapPage
   ],
   providers: [
     StatusBar,

@@ -9,6 +9,16 @@
 
     <div class="menu">
       <ion-row>
+        <ion-col col-4></ion-col>
+        <ion-col col-4>
+          <a href="#" onclick="window.open('https://aer-congres.com/programme-congres-aer/', '_system', 'location=yes');">
+            <img class="logo" src="../../assets/imgs/globe.png">
+            Congrès 2018
+          </a>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
         <ion-col col-4>
         <a href="#" onclick="window.open('https://aer-congres.com/', '_system', 'location=yes');">
           <img class="logo" src="../../assets/imgs/house.png">
@@ -19,11 +29,9 @@
           <img class="logo" src="../../assets/imgs/LogoLyon.png">
           Qui sommes nous ?
         </ion-col>
-        <ion-col col-4>
-        <a href="#" onclick="window.open('https://aer-congres.com/programme-congres-aer/', '_system', 'location=yes');">
-          <img class="logo" src="../../assets/imgs/globe.png">
-          Congrès 2018
-        </a>
+        <ion-col col-4  (click)="pushPage(Pages[4])">
+          <img class="logo" src="../../assets/imgs/Icon_map.png">
+          La carte
         </ion-col>
       </ion-row>
       <ion-row>
@@ -51,3 +59,4 @@
       </ion-row>
     </div>
   </ion-content>
+*
