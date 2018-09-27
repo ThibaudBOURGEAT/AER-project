@@ -9,6 +9,8 @@ import { TopicalityProvider } from '../providers/topicality/topicality';
 import { DatePipe } from '@angular/common';
 import { EmailComposer } from '@ionic-native/email-composer';
 
+import { Push } from '@ionic-native/push';
+
 import { MyApp } from './app.component';
 import { WhoAreWePage } from '../pages/who-are-we/who-are-we';
 import { MenuPage } from '../pages/menu/menu';
@@ -19,20 +21,6 @@ import { ComiteComponent } from '../components/comite/comite';
 import { PartenaireComponent } from '../components/partenaire/partenaire';
 import { ContactPage } from '../pages/contact/contact';
 import { IonicImageViewerModule } from 'ionic-img-viewer';
-
-import { Firebase } from '@ionic-native/firebase';
-import { FcmProvider } from '../providers/fcm/fcm';
-import { AngularFireModule } from '@angular/fire';
-import { AngularFirestoreModule } from 'angularfire2/firestore';
-
-const firebase = {
-  apiKey: "AIzaSyALSMmT2f1UTPsctKCyQDsvwmlVmGjBzCs",
-  authDomain: "aer-cong.firebaseapp.com",
-  databaseURL: "https://aer-cong.firebaseio.com/",
-  projectId: "aer-cong",
-  storageBucket: "aer-cong.appspot.com",
-  messagingSenderId: "37033292368"
-}
 
 @NgModule({
   declarations: [
@@ -50,8 +38,6 @@ const firebase = {
     BrowserModule,
     HttpClientModule,
     IonicModule.forRoot(MyApp),
-    AngularFireModule.initializeApp(firebase),
-    AngularFirestoreModule,
     IonicImageViewerModule
   ],
   bootstrap: [IonicApp],
@@ -72,9 +58,8 @@ const firebase = {
     TopicalityProvider,
     DatePipe,
     EmailComposer,
+    Push,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    FcmProvider,
-    Firebase
   ]
 })
 export class AppModule {}
