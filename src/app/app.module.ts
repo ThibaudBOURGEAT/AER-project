@@ -12,13 +12,9 @@ import { EmailComposer } from '@ionic-native/email-composer';
 import { Push } from '@ionic-native/push';
 
 import { MyApp } from './app.component';
-import { WhoAreWePage } from '../pages/who-are-we/who-are-we';
 import { MenuPage } from '../pages/menu/menu';
-import { InformationsPage } from '../pages/informations/informations';
 import { TopicalityPage } from '../pages/topicality/topicality';
 import { NewPage } from '../pages/new/new';
-import { ComiteComponent } from '../components/comite/comite';
-import { PartenaireComponent } from '../components/partenaire/partenaire';
 import { ContactPage } from '../pages/contact/contact';
 import { MapPage } from '../pages/map/map';
 import { IonicImageViewerModule } from 'ionic-img-viewer';
@@ -26,14 +22,10 @@ import { IonicImageViewerModule } from 'ionic-img-viewer';
 @NgModule({
   declarations: [
     MyApp,
-    WhoAreWePage,
     MenuPage,
-    InformationsPage,
     TopicalityPage,
-    ComiteComponent,
     NewPage,
     ContactPage,
-    PartenaireComponent,
     MapPage
   ],
   imports: [
@@ -45,14 +37,10 @@ import { IonicImageViewerModule } from 'ionic-img-viewer';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    WhoAreWePage,
     MenuPage,
-    InformationsPage,
     TopicalityPage,
-    ComiteComponent,
     NewPage,
     ContactPage,
-    PartenaireComponent,
     MapPage
   ],
   providers: [
