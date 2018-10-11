@@ -36,7 +36,7 @@ export class ContactPage {
 
   send(){
     let email = {
-      to: 'trax.69@hotmail.fr',
+      to: 'sylvaine.sazio@aer-congres.com',
       cc: [],
       bcc: [],
       attachment: [],
