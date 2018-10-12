@@ -24,7 +24,7 @@ export class MyApp {
   pushStetup(){
     const options: PushOptions = {
        android: {
-         senderID: '37033292368'
+         senderID: '104309785545'
        },
        ios: {
            alert: 'true',
