@@ -13,20 +13,26 @@ import { Push } from '@ionic-native/push';
 
 import { MyApp } from './app.component';
 import { MenuPage } from '../pages/menu/menu';
-import { TopicalityPage } from '../pages/topicality/topicality';
-import { NewPage } from '../pages/new/new';
 import { ContactPage } from '../pages/contact/contact';
 import { MapPage } from '../pages/map/map';
+import { HomePage } from '../pages/home/home';
+import { InformationsPage } from '../pages/informations/informations';
+import { WhoAreWePage } from '../pages/who-are-we/who-are-we';
+import { ComiteComponent } from '../components/comite/comite';
+import { PartenaireComponent } from '../components/partenaire/partenaire';
 import { IonicImageViewerModule } from 'ionic-img-viewer';
 
 @NgModule({
   declarations: [
     MyApp,
     MenuPage,
-    TopicalityPage,
-    NewPage,
     ContactPage,
-    MapPage
+    MapPage,
+    HomePage,
+    InformationsPage,
+    WhoAreWePage,
+    ComiteComponent,
+    PartenaireComponent
   ],
   imports: [
     BrowserModule,
@@ -38,10 +44,13 @@ import { IonicImageViewerModule } from 'ionic-img-viewer';
   entryComponents: [
     MyApp,
     MenuPage,
-    TopicalityPage,
-    NewPage,
     ContactPage,
-    MapPage
+    MapPage,
+    HomePage,
+    InformationsPage,
+    WhoAreWePage,
+    ComiteComponent,
+    PartenaireComponent
   ],
   providers: [
     StatusBar,
