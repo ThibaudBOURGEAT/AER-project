@@ -35,7 +35,6 @@ export class MyApp {
 
     const pushObject: PushObject = this.push.init(options);
 
-
     pushObject.on('notification').subscribe((notification: any) => console.log('Vous avez reçu une notification', notification));
 
     pushObject.on('registration').subscribe((registration: any) => console.log('Appareil enregistré', registration));
