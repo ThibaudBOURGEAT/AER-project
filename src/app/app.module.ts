@@ -5,7 +5,6 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 import { HttpClientModule } from '@angular/common/http';
 
-import { TopicalityProvider } from '../providers/topicality/topicality';
 import { DatePipe } from '@angular/common';
 import { EmailComposer } from '@ionic-native/email-composer';
 
@@ -55,7 +54,6 @@ import { IonicImageViewerModule } from 'ionic-img-viewer';
   providers: [
     StatusBar,
     SplashScreen,
-    TopicalityProvider,
     DatePipe,
     EmailComposer,
     Push,
